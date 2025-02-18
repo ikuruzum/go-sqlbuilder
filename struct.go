@@ -1,7 +1,7 @@
 // Copyright 2018 Huan Du. All rights reserved.
 // Licensed under the MIT license that can be found in the LICENSE file.
 
-package sqlbuilder
+package sqb
 
 import (
 	"database/sql/driver"
@@ -14,18 +14,18 @@ import (
 
 var (
 	// DBTag is the struct tag to describe the name for a field in struct.
-	DBTag = "db"
+	DBTag = "json"
 
 	// FieldTag is the struct tag to describe the tag name for a field in struct.
 	// Use "," to separate different tags.
-	FieldTag = "fieldtag"
+	FieldTag = "ftag"
 
 	// FieldOpt is the options for a struct field.
 	// As db column can contain "," in theory, field options should be provided in a separated tag.
-	FieldOpt = "fieldopt"
+	FieldOpt = "fopt"
 
 	// FieldAs is the column alias (AS) for a struct field.
-	FieldAs = "fieldas"
+	FieldAs = "fas"
 )
 
 const (
